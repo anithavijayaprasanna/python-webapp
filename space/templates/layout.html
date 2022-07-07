@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"  href="{{url_for('static',filename='css/main.css')}}">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+<header>
+<div class="container">
+<div class="navbar">
+  <a href="#default" class="logo"></a>
+  <a href="{{url_for('home')}}">Home</a>
+  <a href="{{url_for('gallery')}}">Gallaries</a>
+  
+    <div class="dropdown">
+      <button class="dropbtn">Planets
+        <i class="fa fa-caret-down"></i>
+      </button>
+    <div class="dropdown-content">
+      <a href="#">Mercury</a>
+      <a href="#">Venus</a>
+      <a href="#">Earth</a>
+      <a href="#">Mars</a>
+      <a href="#">Jupiter</a>
+      <a href="#">Saturn</a>
+      <a href="#">Uranus</a>
+      <a href="#">Neptune</a>
+      </div>
+    </div> 
+  <a href="#news">Universe</a>
+  <a href="{{url_for('contact')}}">Contact Us</a>     
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  
+</div>
+</div>
+</header>
+<div class="container">
+  <div class="gallery">
+  {%block content%}
+  {%endblock%}
+</div>
+</div>
+</body>
+</html>

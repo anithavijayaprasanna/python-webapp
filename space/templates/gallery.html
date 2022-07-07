@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gallaries</title>
+    
+  <style>
+ body{
+  background: linear-gradient(180deg, rgb(255, 0, 0) 0%, rgb(0, 255, 0) 50%, rgb(0, 0, 255) 100%);
+ 
+
+ }
+
+ div.gallery{
+
+ 
+       
+  width: 80%;
+  background: linear-gradient(180deg, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+ 
+  margin-left: auto;
+  margin-right: auto;
+ 
+  max-width: 600px;
+ 
+  }
+
+/*div.gallery:hover {
+  border: 1px solid rgb(245, 245, 245);
+}*/
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+hr {
+            height: 2px;
+            background-color: brown;
+            border-color: brown;
+        }
+          
+
+  </style>
+  </head>
+  <body>
+    
+    {% extends "layout.html" %}
+    {% block content %}
+    <div class="gallery">  
+    <h1 style="color: rgb(211, 241, 77);
+         text-shadow:  5px 5px 5px rgb(248, 20, 31);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+      margin-top: 0;
+      margin-bottom: 15px;">SPACE GALLARIES</h1>
+         
+           
+        {% for imagelist in imagelist %}
+          <img src="{{url_for('static',filename=imagelist)}}">
+          <hr style="height: 2px;
+          background-color: rgb(77, 20, 233);
+          border-color: rgb(26, 22, 236);">
+          
+        {%endfor%}
+        
+      
+        
+
+      
+    </div>
+  {% endblock %}
+  </body>
+  </html>
+  
+  
+  
