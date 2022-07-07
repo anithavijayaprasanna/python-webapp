@@ -1,1 +1,164 @@
 
+body {
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+h2{
+    font-size: 40px;
+    color: rgb(219, 229, 233);
+    padding-left: 50px;
+    background-image: url(heared.png);
+
+    font-style: bold;
+    padding: 20px;
+
+   
+    
+}
+h4{
+  
+    color: rgb(240, 206, 16);
+    
+}
+
+
+.navbar {
+  font-family: 'Times New Roman', Times, serif;
+  overflow: hidden;
+  background-color: rgb(51, 11, 116);
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 35px;
+  text-decoration: none;
+  
+  
+  
+}
+.navbar a.logo {
+    float: left;
+    background-image: url("logo1.png");
+    padding: 30px 120px;
+  
+  
+  background-color: rgb(51, 11, 116);
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(214, 214, 114);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(46, 38, 155);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.topnav input[type=text] {
+  padding: 5px;
+  margin-top: none;
+  font-size: 12px;
+  border: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.topnav .search-container button:hover {
+  background: rgb(223, 222, 224);
+
+  
+}
+.search-container {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 35px;
+  text-decoration: none;
+  
+ 
+ 
+}
+.container {
+  width: 1350px;
+  margin: 0 auto;
+  text-align: center;
+}
+.myclass{
+  color: rgb(241, 232, 232);
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px;
+  padding-left: 50px; 
+  
+  padding-top: 20px;
+  
+  background: url(n.png);
+  
+  background-size: cover;
+}
+.myclass1{
+  color: rgb(241, 232, 232);
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px;
+  padding-left: 50px; 
+  
+  padding-top: 20px;
+  
+}
+
+  .mySlides {display:none;}
+
+  .w3-content w3-display-container{
+    background-image: url(n.png);
+  }
+/*gallery*/
+.gallery {
+background-image: url('static/pics/OIP.jpg');
+}
+
+ul{
+  text-align: left;
+}
+
